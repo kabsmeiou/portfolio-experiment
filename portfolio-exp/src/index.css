@@ -4,7 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+body {
+  cursor: default;
+}
+
+.text-content {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,8 +23,13 @@ html, body {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.resize-effect {
+.resize-effect, .resize-effect-2 {
   transition: ease-in-out all 0.3s;
+}
+
+.resize-effect-2:hover {
+  height: 33rem;
+  width: 33rem;
 }
 
 .resize-effect:hover {
