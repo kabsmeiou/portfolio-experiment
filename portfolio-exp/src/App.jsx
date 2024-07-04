@@ -1,13 +1,13 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
 export default function App() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <AnimatedRoutes></AnimatedRoutes>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 
