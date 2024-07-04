@@ -5,7 +5,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 
 export default function App() {
     return (
-      <HashRouter>
+      <HashRouter basename="/portfolio-experiment">
         <AnimatedRoutes></AnimatedRoutes>
       </HashRouter>
     );
