@@ -4,6 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
+ul, li {
+  font-style: normal !important;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.github.a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.particles {
+  z-index: -999;
+  position: absolute;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard */
+}
+
 body {
   cursor: default;
 }
@@ -37,12 +60,24 @@ body {
   width: 37rem;
 }
 
+.glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
 .text-glow {
   transition: text-shadow 0.3s;
 }
 
 .text-glow:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.text-glow-portfolio {
+  transition: text-shadow 0.3s;
+}
+
+.text-glow-portfolio:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 /* #tsparticles {
   max-width: 100%;

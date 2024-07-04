@@ -24,6 +24,7 @@ export default {
       },
       boxShadow: {
         'glow': '0 0 10px 5px rgba(255, 255, 255, 0.6)',
+        'glow-subtle': '0 0 10px 3px rgba(255, 255, 255, 0.4)',
       },
       fontWeight: {
         'max' : '1500',
