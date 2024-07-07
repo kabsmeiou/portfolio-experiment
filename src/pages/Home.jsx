@@ -7,20 +7,20 @@ const Home = () => {
   return (
     <>
       <div className='w-full h-screen overflow-hidden' >
-        <motion.div className='flex flex-1 mt-108px'
+        <motion.div className='flex flex-1 mt-12'
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           exit={{opacity: 0}}
           style={{backgroundColor: '#EDEDED'}}
         >
-            <div className='flex h-screen w-6/12 items-center justify-center'>
-                <div className='relative mb-36 h-36r w-36r resize-effect cursor-pointer'>
+            <div className='flex h-screen w-6/12'>
+                <div className='relative my-auto mx-auto h-36r w-36r resize-effect cursor-pointer'>
                     <div className='relative h-90p w-90p' style={{backgroundColor: '#171717'}}></div>
                     <div className='absolute bottom-0 right-0 h-90p w-90p bg-temp-image bg-center bg-cover'></div>
                 </div>
             </div>
-            <div className='rounded mt-auto mb-48 h-42r border-black border-2 overflow-hidden'></div>
-            <div className='flex w-6/12 mb-48 items-center justify-center overflow-hidden'>
+            <div className='rounded my-auto h-42r border-black border-2'></div>
+            <div className='flex w-6/12 my-auto items-center justify-center overflow-hidden'>
                 <div className='h-fit me-2'>
                     <div className='text-5xl font-bold w-fit text-shadow-lg no-select'>Hello,</div>
                     <div className='text-6xl font-extrabold my-2 w-fit text-shadow-lg no-select'>Welcome to my Website!</div>
