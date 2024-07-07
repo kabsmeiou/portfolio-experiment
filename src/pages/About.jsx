@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -24,6 +25,7 @@ const About = () => {
                 <div className='text-lg w-fit text-shadow-sm mt-4 me-12 text-justify tracking-wide overflow-hidden text-content no-select'>
                   A 3rd Year Computer Science student in Ateneo de Naga University. I am an INTJ. I enjoy problem-solving, which is why I participate in competitive programming competitions quite often. My hobbies include coding, playing the piano, playing video games (mainly FPS and RPG), reading books, playing sports, and many more. One thing I like about myself is my ability to manage my time effectively. I hate, however, my weakness for distractions that hinder my progress on most of the tasks that I work on. While there are a lot of things I wish to achieve in my lifetime, the most important thing for me is to live happily!
                 </div>
+                <Link to='/portfolio'><div className='text-xl mt-4 font-bold w-fit text-shadow-lg cursor-pointer hover:text-2xl duration-150'>See my works &raquo;</div></Link>
               </div>
             </div>
             <div className='h-screen w-3/6'>
