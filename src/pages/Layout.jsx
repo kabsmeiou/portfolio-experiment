@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import HeaderNavigation from '../components/HeaderNavigation';
-import Particles from "react-particles";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   const location = useLocation();

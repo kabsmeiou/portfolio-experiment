@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isClicked, setClicked] = useState(false);
@@ -29,6 +30,7 @@ const Home = () => {
             </div>
         </motion.div>
       </div>
+      <Footer></Footer>
     </>
   )
 };

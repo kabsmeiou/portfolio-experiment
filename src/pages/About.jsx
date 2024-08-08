@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -38,6 +39,7 @@ const About = () => {
         </div>
       </motion.div>
     </div>
+    <Footer></Footer>
     </>
   )
 };

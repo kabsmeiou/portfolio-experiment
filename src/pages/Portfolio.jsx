@@ -1,30 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import Projects from '../components/Projects';
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; 
-
+import Footer from '../components/Footer';
 const Portfolio = () => {
-  const [ init, setInit ] = useState(false);
+  // const [ init, setInit ] = useState(false);
 
-  // this should be run only once per application lifetime
-  useEffect(() => {
-      initParticlesEngine(async (engine) => {
-          // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-          // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-          // starting from v2 you can add only the features you need reducing the bundle size
-          //await loadAll(engine);
-          //await loadFull(engine);
-          await loadSlim(engine);
-          //await loadBasic(engine);
-      }).then(() => {
-          setInit(true);
-      });
-  }, []);
+  // // this should be run only once per application lifetime
+  // useEffect(() => {
+  //     initParticlesEngine(async (engine) => {
+  //         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+  //         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+  //         // starting from v2 you can add only the features you need reducing the bundle size
+  //         //await loadAll(engine);
+  //         //await loadFull(engine);
+  //         await loadSlim(engine);
+  //         //await loadBasic(engine);
+  //     }).then(() => {
+  //         setInit(true);
+  //     });
+  // }, []);
 
-  const particlesLoaded = (container) => {
-      console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //     console.log(container);
+  // };
 
   const projects = [
     {
@@ -45,14 +43,14 @@ const Portfolio = () => {
 
   return (
   <>
-    <div className='w-full h-screen overflow-hidden'>
+    <div className='w-full h-screen overflow-hidden'  style={{backgroundColor: '#171717'}}>
       <motion.div className='flex flex-col mt-108px'
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}
         transition={{duration: 0.3}}
       >          
-      { init && <Particles
+      {/* { init && <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             className='particles'
@@ -126,7 +124,7 @@ const Portfolio = () => {
                 detectRetina: true,
             }}
         />
-      }
+      } */}
       <div className="h-fit mt-5">
         <div className='text-5xl font-extrabold my-8 mx-auto w-fit glow text-white no-select'>My Works</div>
       </div> 
@@ -151,6 +149,7 @@ const Portfolio = () => {
       </div>
       </motion.div>
     </div>
+    <Footer></Footer>
   </>
   )
 };
