@@ -10,6 +10,7 @@ export default {
         'temp-image': "url('/src/assets/meme.jpg')",
       },
       spacing: {
+        '4.2': '4.2rem',
         '90p': '90%',  
         '80p': '80%',  
         '70p': '70%',
@@ -20,7 +21,10 @@ export default {
         '36r' : '36rem',
         '32r' : '32rem',
         '108px' : '108px',
+        '216px' : '216px',
         '50px' : '50px',
+        '256': '256px',
+        '64p': '64px',
       },
       boxShadow: {
         'glow': '0 0 10px 5px rgba(255, 255, 255, 0.6)',
