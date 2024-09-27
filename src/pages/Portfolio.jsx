@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import Projects from '../components/Projects';
-<<<<<<< HEAD
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 import PageFooter from '../components/PageFooter';
@@ -21,9 +20,6 @@ import numpy from "../assets/icons8-numpy-48.png"
 import pandas from "../assets/icons8-pandas-48.png"
 import cpp from "../assets/icons8-c++-48.png"
 
-=======
-import Footer from '../components/Footer';
->>>>>>> 930ce6c6adf1e99d1b3006ab798fc9ace7c80cbb
 const Portfolio = () => {
   // const [ init, setInit ] = useState(false);
 
