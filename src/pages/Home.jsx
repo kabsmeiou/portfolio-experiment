@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import PageFooter from '../components/PageFooter';
 
 const Home = () => {
   const [isClicked, setClicked] = useState(false);
@@ -16,7 +17,7 @@ const Home = () => {
             <div className='flex h-screen w-6/12'>
                 <div className='relative my-auto mx-auto h-36r w-36r resize-effect cursor-pointer'>
                     <div className='relative h-90p w-90p' style={{backgroundColor: '#171717'}}></div>
-                    <div className='absolute bottom-0 right-0 h-90p w-90p bg-temp-image bg-center bg-cover'></div>
+                    <div className='absolute bottom-0 right-0 h-90p w-90p bg-temp-image bg-[20%_center] bg-cover'></div>
                 </div>
             </div>
             <div className='rounded my-auto h-42r border-black border-2'></div>
@@ -29,6 +30,7 @@ const Home = () => {
             </div>
         </motion.div>
       </div>
+      <PageFooter></PageFooter>
     </>
   )
 };

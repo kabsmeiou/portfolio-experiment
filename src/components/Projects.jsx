@@ -1,7 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function Projects({projectTitle, projectDescription, projectTechStack, projectLearnings, githubLink}) {
+const icons = [
+  { key: "python", value: "../" },
+  { key: "java", value: "25" },
+  { key: "postgresql", value: "New York" }, 
+  { key: "oracle", value: "New York" },
+  { key: "django", value: "John Doe" },
+  { key: "spring", value: "25" },
+  { key: "c++", value: "New York" }, 
+  { key: "html", value: "New York" },
+  { key: "css", value: "New York" }
+];
+
+function Projects({projectTitle, projectDescription, projectTechStack, githubLink}) {
   return (
     <>
       <motion.div className="flex-shrink-0 h-70p w-96 bg-white rounded shadow-glow-subtle">
@@ -15,21 +27,23 @@ function Projects({projectTitle, projectDescription, projectTechStack, projectLe
               </p>
             </div>
             <div className='flex h-2/5 p-2 rounded shadow-inner m-2'>
-              <div className='w-3/6 m-2 font-bold text-lg overflow-y-auto'>
-                <p className='text-shadow-lg'>Tech Stack</p>
-                <ul>
-                  {projectTechStack.map((tech, index) => (
-                    <li key={index}>{index + 1}. {tech}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className='w-3/6 m-2 font-bold text-lg overflow-y-auto'>
-                <p className='text-shadow-lg'>What I learned</p>
-                <ul>
-                  {projectLearnings.map((skill, index) => (
-                    <li key={index}>{index + 1}. {skill}</li>
-                  ))}
-                </ul>
+              <div className='flex flex-col items-center w-full m-2 font-bold text-lg overflow-y-auto'>
+                <p className='text-shadow-lg'>Skills</p>
+                <div className='w-full flex flex-wrap justify-center max-w-full gap-x-5 gap-y-4 mt-4'>
+                {projectTechStack.map((tech, index) => (
+                  <div className='relative group' key={index}>
+                    <div className='bg-[#EDEDED] rounded p-1 z-0'>
+                      <div
+                        className='w-[48px] h-[48px] bg-cover z-0'
+                        style={{ backgroundImage: `url(${tech.image})` }}
+                      ></div>
+                    </div>
+                    <div className='absolute left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block bg-black text-white text-xs rounded px-2 py-1 z-10'>
+                      {tech.name}
+                    </div>
+                  </div>
+                ))}
+                </div>
               </div>
             </div>
             <div className='h-20 p-2 flex items-center'>

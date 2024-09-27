@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'temp-image': "url('/src/assets/1月壁紙_PC.png')",
+        'temp-image': "url('/src/assets/meme.jpg')",
       },
       spacing: {
         '90p': '90%',  
@@ -28,6 +28,10 @@ export default {
       },
       fontWeight: {
         'max' : '1500',
+      },
+      colors: {
+        'bgwhite': '#EDEDED',
+        'bgblack' : '#171717',
       },
     },
   },
